@@ -1,4 +1,4 @@
-name: Test Repo Health Checks 
+name: Test Repo Health Checks
 
 on:
   pull_request:
@@ -79,7 +79,7 @@ jobs:
         with:
           repository: huniafatima-arbi/edx-repo-health
           token: ${{ secrets.REPO_HEALTH_ACCESS_TOKEN }}
-          path: edx-repo-health
+          path: huniafatima-arbi/edx-repo-health
           ref: huniafatima/pinned-python-dependency-count
       
       - name: Install pip & pip-tools
