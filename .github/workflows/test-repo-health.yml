@@ -78,9 +78,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: huniafatima-arbi/edx-repo-health
+          token: ${{ secrets.REPO_HEALTH_ACCESS_TOKEN }}
           path: huniafatima-arbi/edx-repo-health
           ref: huniafatima/pinned-python-dependency-count
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
       
       - name: Install pip & pip-tools
         run: |
