@@ -104,8 +104,9 @@ jobs:
       - name: Clone repo-health-data repo
         uses: actions/checkout@v4
         with:
-          repository: ${{ inputs.TARGET_REPO_TO_STORE_REPORTS }}
+          repository: edx/repo-health-data
           path: repo-health-data
+          ref: huniafatima/test-branch
 
       - name: Run repo health org script
         env:
