@@ -107,6 +107,7 @@ jobs:
           repository: edx/repo-health-data
           path: repo-health-data
           ref: huniafatima/test-branch
+          token: ${{ secrets.REPO_HEALTH_ACCESS_TOKEN }}
 
       - name: Run repo health org script
         env:
