@@ -123,7 +123,7 @@ jobs:
         run: |
           bash huniafatima-arbi/edx-repo-health/scripts/repo-health-script.sh
 
-      - name: Run repo health artifact script
+      - name: Run repo health artifact script 
         run: |
           bash huniafatima-arbi/edx-repo-health/blob/huniafatima/pinned-python-dependency-count/scripts/repo-health-artifact.sh
         
