@@ -104,9 +104,9 @@ jobs:
       - name: Clone repo-health-data repo
         uses: actions/checkout@v4
         with:
-          repository: edx/repo-health-data
+          repository: huniafatima-arbi/repo-health-data
           path: repo-health-data
-          ref: huniafatima/test-branch
+          ref: master
           token: ${{ secrets.REPO_HEALTH_ACCESS_TOKEN }}
 
       - name: Run repo health org script
