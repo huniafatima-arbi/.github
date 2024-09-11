@@ -119,7 +119,7 @@ jobs:
         with:
           repository: ${{ inputs.TARGET_REPO_TO_STORE_REPORTS }}
           path: repo-health-data
-          ref: master
+          ref: huniafatima/health-job-workflow-issue
           token: ${{ secrets.REPO_HEALTH_BOT_TOKEN}}
 
       - name: Run repo health org script
