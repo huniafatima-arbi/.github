@@ -91,9 +91,9 @@ jobs:
       - name: Clone edx-repo-health repo
         uses: actions/checkout@v4
         with:
-          repository: openedx/edx-repo-health
+          repository: huniafatima-arbi/edx-repo-health
           path: edx-repo-health
-          ref: ${{ inputs.EDX_REPO_HEALTH_BRANCH }}
+          ref: huniafatima/health-job-workflow-issue
 
       - name: Install pip & pip-tools
         run: |
