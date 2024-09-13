@@ -97,8 +97,8 @@ jobs:
 
       - name: Install pip & pip-tools
         run: |
-          python3 -m pip install -r edx-repo-health/requirements/pip.txt
-          python3 -m pip install -r edx-repo-health/requirements/pip-tools.txt
+          python3 -m pip install -r edx-repo-health-hn/requirements/pip.txt
+          python3 -m pip install -r edx-repo-health-hn/requirements/pip-tools.txt
 
       - name: Clone testeng-ci repo
         uses: actions/checkout@v4
@@ -148,12 +148,12 @@ jobs:
           EDX_REPO_HEALTH_BRANCH: ${{ inputs.EDX_REPO_HEALTH_BRANCH }}
           ONLY_CHECK_THIS_REPOSITORY: ${{ inputs.ONLY_CHECK_THIS_REPOSITORY }}
         run: |
-          bash edx-repo-health/scripts/dependencies-health-script.sh
+          bash edx-repo-health-hn/scripts/dependencies-health-script.sh
 
       - name: Run repo health artifact script
         if: ${{ inputs.DASHBOARD_NAME == 'repo_health' }}
         run: |
-          bash edx-repo-health/scripts/repo-health-artifact.sh
+          bash edx-repo-health-hn/scripts/repo-health-artifact.sh
 
       - name: Upload sqlite db as artifact
         if: ${{ inputs.DASHBOARD_NAME == 'repo_health' }}
