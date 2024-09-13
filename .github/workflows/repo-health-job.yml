@@ -93,7 +93,7 @@ jobs:
         with:
           repository: huniafatima-arbi/edx-repo-health
           path: edx-repo-health
-          ref: huniafatima/downgrade-setuptools
+          ref: huniafatima/testing-workflow-issue
 
       - name: Install pip & pip-tools
         run: |
