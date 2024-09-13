@@ -92,7 +92,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: huniafatima-arbi/edx-repo-health
-          path: edx-repo-health
+          path: edx-repo-health-hn
           ref: huniafatima/testing-workflow-issue
 
       - name: Install pip & pip-tools
@@ -137,7 +137,7 @@ jobs:
           REPO_HEALTH_REPOS_WORKSHEET_ID: ${{ inputs.REPO_HEALTH_REPOS_WORKSHEET_ID }}
           REPO_HEALTH_OWNERSHIP_SPREADSHEET_URL: ${{ inputs.REPO_HEALTH_OWNERSHIP_SPREADSHEET_URL }}
         run: |
-          bash edx-repo-health/scripts/repo-health-script.sh
+          bash edx-repo-health-hn/scripts/repo-health-script.sh
 
       - name: Run dependencies health dashboard script
         if: ${{ inputs.DASHBOARD_NAME == 'dependencies_health' }}
