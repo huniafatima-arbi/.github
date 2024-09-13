@@ -110,9 +110,9 @@ jobs:
       - name: Clone repo-tools repo
         uses: actions/checkout@v4
         with:
-          repository: huniafatima-arbi/repo-tools
+          repository: openedx/repo-tools
           path: repo_tools
-          ref: huniafatima/testing-workflow
+          ref: master
 
       - name: Clone repo-health-data repo
         uses: actions/checkout@v4
